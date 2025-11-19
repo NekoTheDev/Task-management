@@ -1,73 +1,79 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# 📌 Task Management App
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A simple and modern **Task Management** web application designed to help users create, organize, track, and complete tasks easily.  
+This project focuses on clean structure, reusable logic, and easy customization.
 
-## React Compiler
+<Badge>HTML</Badge> <Badge>CSS</Badge> <Badge>JavaScript</Badge> <Badge>Open Source</Badge>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Create** new tasks  
+- **Edit** existing tasks  
+- **Delete** tasks  
+- **Mark** tasks as completed  
+- **Categorize** tasks  
+- **Modern UI** with simple styling  
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📁 Project Structure
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+Task-management/
+│── index.html
+│── style.css
+│── script.js
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+##⚙️ Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1️⃣ Clone the repository
+```bash
+git clone https://github.com/NekoTheDev/Task-management.git
 ```
+
+2️⃣ Open the project
+
+There is no build step.
+Just open the file:
+**index.html**
+in your browser.
+
+***🔧 Future Enhancements**
+
+
+-LocalStorage persistence
+
+-Drag & drop reordering
+
+-Task priority
+
+-Filter & search
+
+-Responsive redesign
+
+-User accounts
+
+**🤝 Contributing**
+
+Contributions are welcome!
+
+**Steps:
+
+-Fork the repository
+
+=Create a new branch
+
+=Commit your changes
+
+=Submit a Pull Request
+
+#📄 License
+MIT License — feel free to use, modify, and distribute.
+
+
