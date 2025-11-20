@@ -65,7 +65,7 @@ Contributions are welcome!
 
 **Steps:
 
--Fork the repository
+=Fork the repository
 
 =Create a new branch
 
